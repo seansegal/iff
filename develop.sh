@@ -1,0 +1,1 @@
+sass --watch scss/iff.scss:css/iff.css
