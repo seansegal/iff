@@ -6,7 +6,8 @@ var isMobile = function isMobile(){
 }
 
 $(document).ready(function(){
-	if(isMobile()){
+	if(true) {
+	// if(isMobile()){ // TODO: Uncomment when trailer issue fixed.
 		$('#mobile-bg-picture').show();
 		$('#youtube-bg-iframe').hide();
 	}
@@ -16,7 +17,7 @@ $('#newsletter-button').click(function(){
 	if($('#newsletter-email').val()){
 		// AJAX POST to Formspree
 		$.ajax({
-			url: "https://formspree.io/iffweb2017@gmail.com",  
+			url: "https://formspree.io/iffweb2017@gmail.com",
 		    method: "POST",
 		    data: {
 		    	message: $('#newsletter-email').val(),
